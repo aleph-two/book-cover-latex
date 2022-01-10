@@ -1,0 +1,45 @@
+\bookcovercomponent{normal}{back}{%
+    \begin{minipage}[b][\coverheight][t]{\coverwidth}
+      \begin{center}
+        \vspace{1.5cm}
+        \begin{minipage}[t]{.8\coverwidth}
+
+          %%% Back Cover Text
+          {
+            \fontsize{11}{17}\selectfont\backtext
+            \vfil
+          }
+          \vspace{.5cm}
+        \end{minipage}
+
+        %%% Back Cover Author Information
+        \begin{minipage}{.85\textwidth}
+          \rule{\textwidth}{.5pt}
+          \begin{tabular}[h]{p{3.4cm} p{\textwidth}}
+            \vspace{0pt}
+            %% Author photo
+            \begin{tcolorbox}[beamer,
+              width=3.6cm,
+              arc=0pt,
+              boxsep=0pt,
+              left=0pt,right=0pt,top=0pt,bottom=0pt,
+              ] \includegraphics[width=3.6cm]{\authorimage}
+            \end{tcolorbox}
+            &
+            \vspace{5pt}
+            %% Author information
+            \begin{minipage}[b]{.58\coverwidth}
+              \fontsize{11pt}{1.4em}\selectfont\authortext
+            \end{minipage}
+          \end{tabular}
+          \begin{flushright}
+            \vspace{-2.6cm}
+            \begin{minipage}[b]{4cm}
+              \raggedleft
+            \end{minipage}
+          \end{flushright}
+        \end{minipage}
+        \vspace{-3cm}
+      \end{center}
+    \end{minipage}
+  }
